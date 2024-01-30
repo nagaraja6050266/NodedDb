@@ -9,7 +9,7 @@ async function main(keyword) {
         console.log('Connected to MongoDB');
         const database = client.db('FirstDB');
         const collection = database.collection('FirstCollection');
-        const browser = await puppeteer.launch({executablePath: 'C:\\Users\\Nagaraja\\.cache\\puppeteer\\chrome\\win64-121.0.6167.85\\chrome-win64\\chrome.exe',headless: false });
+        const browser = await puppeteer.launch();
         const page = await browser.newPage();
         await page.goto('https://www.google.com', { waitUntil: 'domcontentloaded' });
         await page.waitForSelector('textarea[name="q"]');
