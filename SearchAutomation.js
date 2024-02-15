@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const { MongoClient } = require('mongodb');
 
 async function main(keyword) {
-    const uri = 'mongodb+srv://itzinr:Inr6050266@cluster.luvtjrd.mongodb.net/?retryWrites=true&w=majority';
+    const uri = 'connectionstring'; //replace with connectionstring
     const client = new MongoClient(uri);
     try {
         await client.connect();
